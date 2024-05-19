@@ -8,4 +8,4 @@
 
 
 
-## Viodeos about Violence and Non Violence content are all located the in AI-PROJECT Directory or You can Download your own video that are less than or equal to 200MB
+## Viodeos about Violence and Non Violence content are all located in the AI-PROJECT Directory or You can Download your own video that are less than or equal to 200MB
