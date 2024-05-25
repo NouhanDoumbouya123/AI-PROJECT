@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, LSTM, Dense, Flatten, TimeDistributed
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, LSTM, Dense, Flatten, TimeDistributed, Dropout
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.utils import to_categorical
 
@@ -36,9 +36,11 @@ for class_name in CLASSES_LIST:
         video_file_path = os.path.join(class_dir, video_file)
         frames = extract_frames(video_file_path)
         if len(frames) >= SEQUENCE_LENGTH:
-            frames = frames[:SEQUENCE_LENGTH]  # Truncate or pad frames to ensure fixed sequence length
+            frames = frames[:SEQUENCE_LENGTH]  # Truncate to ensure fixed sequence length
         else:
-            frames.extend([frames[-1]] * (SEQUENCE_LENGTH - len(frames)))  # Pad with the last frame if shorter
+            # Pad with black frames if shorter
+            padding = [np.zeros((IMAGE_HEIGHT, IMAGE_WIDTH, 3), dtype=np.uint8)] * (SEQUENCE_LENGTH - len(frames))
+            frames.extend(padding)
         X.append(frames)
         y.append(CLASSES_LIST.index(class_name))
 
@@ -71,7 +73,9 @@ model = Sequential([
     TimeDistributed(MaxPooling2D(pool_size=(2, 2))),
     TimeDistributed(Flatten()),
     LSTM(64, return_sequences=False),
+    Dropout(0.5),
     Dense(128, activation='relu'),
+    Dropout(0.5),
     Dense(len(CLASSES_LIST), activation='softmax')
 ])
 
