@@ -9,3 +9,4 @@ collection==0.1.6
 protobuf>=3.20.0
 IPython
 gunicorn==20.1.0
+Flask==2.0.2
