@@ -2,9 +2,10 @@ mutils
 keras>=2.7.0,<3.0.0
 opencv-python-headless
 streamlit==1.23.1
-tensorflow>=2.12.0,<3.0.0
-tensorflow-estimator>=2.12.0,<3.0.0
+tensorflow>=2.7.0,<2.9.0
+tensorflow-estimator>=2.7.0,<2.9.0
 tensorflow-io-gcs-filesystem==0.31.0
 collection==0.1.6
 protobuf>=3.20.0
 IPython
+gunicorn==20.1.0:wq
