@@ -89,4 +89,4 @@ print(model.summary())
 model.fit(X_train, y_train, batch_size=32, epochs=10, validation_data=(X_test, y_test))
 
 # Save the model
-model.save('antoine_model.h5')
+model.save('ViolenceDetectionModel.h5')

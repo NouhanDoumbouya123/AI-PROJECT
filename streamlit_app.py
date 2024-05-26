@@ -1,5 +1,3 @@
-#Save before making any changes!!
-
 import streamlit as st
 import cv2
 import numpy as np
@@ -199,7 +197,20 @@ def save(uploaded_file):
     # Display a success message
     st.success(f"Video saved locally")
     
-st.title("The Brainwaves Violence Detection Website (AI Project)")
+st.title("Violence Detection Website")
+st.title("Violence Detection Website")
+
+    # Read the HTML file
+html_file_path = 'index.html'
+with open(html_file_path, 'r') as f:
+    html_content = f.read()
+
+    # Display the HTML content
+st.markdown(html_content, unsafe_allow_html=True)
+st.write(f'<iframe src="index.html" width="1000" height="600"></iframe>', unsafe_allow_html=True)
+
+st.markdown(html_content, unsafe_allow_html=True)
+
 
 # File Upload
 uploaded_file = st.file_uploader("Choose a video file", type=["mp4", "avi"])

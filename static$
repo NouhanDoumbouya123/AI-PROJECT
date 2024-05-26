@@ -1,0 +1,195 @@
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes the full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Apply background image to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-artificial-intelligence-future-technology-background-technology-backgroundtechnology-backgroundtechnology-image_73327.jpg");
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white for better contrast */
+    display: flex;
+    flex-direction: column; /* Arrange child elements in a column */
+}
+
+/* Logo section */
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px;
+    position: absolute; /* Position the logo */
+    top: 20px; /* Adjust the vertical position */
+    left: 20px; /* Adjust the horizontal position */
+}
+
+.logo img {
+    width: 100px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 10px; /* Space between the logo and the text */
+}
+
+.logo p {
+    font-size: 1.2em;
+    color: #fff; /* White text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style the header */
+h1 {
+    color: #42a5f5; /* Blue color for the heading */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better readability */
+    border: 2px solid #42a5f5; /* Blue border around the heading */
+    border-radius: 10px; /* Rounded corners for the heading */
+    max-width: 80%; /* Limit the width of the heading for better readability */
+    margin: 50px auto; /* Center the heading horizontally and add margin for spacing */
+}
+
+/* Additional styles for links */
+a {
+    color: #fff; /* White color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Upload part */
+.upload_part {
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.9); /* Light yellow background with transparency */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the height as needed */
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the element horizontally */
+    flex: 1; /* Allow the element to grow and take available space */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.upload_part ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.upload_part li {
+    margin: 10px 0; /* Add margin to list items */
+}
+
+.upload_part a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.upload_part a:hover {
+    background-color: #0056b3;
+}
+
+/* Upload page */
+.upload_page {
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.9); /* Light yellow background with transparency */
+    color: black;
+    display: flex;
+    flex-direction: column; /* Adjust to column layout */
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center the element horizontally */
+    height: auto; /* Adjust height to fit content */
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.upload_page form {
+    margin-top: 20px; /* Add margin above the form */
+}
+
+.upload_page input[type="file"] {
+    margin-bottom: 20px; /* Add margin below the file input */
+}
+
+.upload_page button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s;
+}
+
+.upload_page button:hover {
+    background-color: #0056b3;
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for contrast */
+    color: white; /* White text color */
+    margin-top: auto; /* Push the team section to the bottom */
+}
+
+.team-section h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #42a5f5; /* Blue color for the heading */
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping of team members */
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    text-align: center;
+    width: 200px; /* Fixed width for each team member card */
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%; /* Circular images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to images */
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff; /* White text color */
+}
+
+#filename {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#predicted-class {
+    font-size: 16px;
+}

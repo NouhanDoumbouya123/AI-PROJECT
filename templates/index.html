@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violence Detection Website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="logo">
+        <img src="https://ugc.production.linktr.ee/dabb2cce-e881-47fb-9589-79eb6cee9e14_AIU-Logo-Official-01.png?io=true&size=avatar-v3_0" alt="AIU Logo">
+        <p>Albukhary International University</p>
+    </div>
+    
+    <h1>Welcome to <b>Brainwaves</b> <em>Violence Detection</em> Website</h1>
+    
+    <div class="upload_part">
+        <p>Please upload your video to make a prediction:</p>
+        <ul>
+            <li><a href="/upload">Upload Video</a></li>
+        </ul>
+    </div>
+
+    <div class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/photo_2024-05-26_20-47-44.jpg') }}" alt="Member 1">
+                <p>AHMED ADULLAH</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/photo_2024-05-26_20-45-36.jpg') }}" alt="Member 2">
+                <p>ANTOINE LENO</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='/images/photo_2024-05-26_20-45-58.jpg') }}" alt="Member 3">
+                <p>MD ALTAF HOSSAIN SUNNY</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='/images/photo_2024-05-26_20-48-42.jpg') }}" alt="Member 4">
+                <p>NOUHAN DOUMBOUYA</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='/images/photo_2024-05-26_20-46-10.jpg') }}" alt="Member 5">
+                <p>IBRAHIMA KINDY DIALLO</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='/images/photo_2024-05-26_20-45-52.jpg') }}" alt="Member 6">
+                <p>MD MAHMUD ZAMAN</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='/images/1696056788266-01.jpeg') }}" alt="Member 7">
+                <p>MOSTAFA ANWAR</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
